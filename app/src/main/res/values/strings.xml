@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">BottomSheetDemo</string>
+
+    <!-- button text -->
+    <string name="button_text_show_bottom_sheet">Show bottom sheet</string>
+    <string name="button_text_collapse_bottom_sheet">Collapse bottom sheet</string>
+    <string name="button_text_hide_bottom_sheet">Hide bottom sheet</string>
+    <string name="button_text_show_bottom_sheet_dialog">Show bottom sheet dialog</string>
+
+    <!-- bottom sheet behavior -->
+    <string name="string_bottom_sheet_behavior">android.support.design.widget.BottomSheetBehavior</string>
+    <string name="appbar_scrolling_view_behavior">android.support.design.widget.AppBarLayout$ScrollingViewBehavior</string>
+
+    <string name="text_pull_to_show_more">pull to show more content</string>
+    <string name="text_showing_sheet_content">Bottom sheet content</string>
+    <string name="text_click_me">Click me</string>
+    <string name="title1">Point of Interest 1</string>
+    <string name="title2">Point of Interest 2</string>
+    <string name="text_more_content_to_user">
+        We can show the user more content here. Add more UI widgets, texts etc.
+    </string>
+
+    <string name="text_lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </string>
+    <string-array name="curated_collection_images">
+        <item>https://media.lonelyplanet.com/a/g/hi/t/9f6f711b214b7c4df38de89a0e924cf3-geffrye-museum.jpg</item>
+        <item>https://media.lonelyplanet.com/a/g/hi/t/e14e25919cf4d62beabf8c5cf542d1c0-london-eye.jpg</item>
+        <item>https://media.lonelyplanet.com/a/g/hi/t/c72bd1bce5209319f28f78e904644cb5-st-paul-s-cathedral.jpg</item>
+        <item>https://media.lonelyplanet.com/mastheads/GettyImages-516604043_high.jpg</item>
+        <item>https://media.lonelyplanet.com/assets/image/1ef06b230dfeafa0d148ad87349136bf4325be47cced8d4f1249517b9ebdb0d3/964714b53f1d8e3b5e6e4f845373f334a765d4238ec3ba6e277cc6ca05f17c2a.jpg</item>
+        <item>https://media.lonelyplanet.com/a/g/hi/t/b8fca0cb222e2c5520cdb6c197c02375-teatre-nacional-de-catalunya.jpg</item>
+        <item>https://media.lonelyplanet.com/assets/image/045bf9590e8602ff28e9c0c1ebce3aadeca9fbec05d87c1d86af8305569d18bb/d66cc56a3009dede6ff599f89957ffb41621361081187d98b48b54fd60357da1.jpg</item>
+        <item>https://media.lonelyplanet.com/assets/image/1ef06b230dfeafa0d148ad87349136bf4325be47cced8d4f1249517b9ebdb0d3/964714b53f1d8e3b5e6e4f845373f334a765d4238ec3ba6e277cc6ca05f17c2a.jpg</item>
+        <item>https://media.lonelyplanet.com/assets/image/51bd62cb86191bab039bdfabe61fd6d4db37fee44aa44b07093fea4eb0a34fb6/6bd2e3d73e958dc0f969a6a2f70742d7abfd46d4654868e24a2fdab420bc6c31.jpg</item>
+    </string-array>
+</resources>

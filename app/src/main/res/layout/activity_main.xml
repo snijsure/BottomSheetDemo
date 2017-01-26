@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.snijsure.sample.bottomsheetdemo.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/map_image_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/map_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/map"
+            />
+
+        <Button
+            android:id="@+id/show_view_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Show Bottom Sheet"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/layout_bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:behavior_hideable="false"
+        app:behavior_peekHeight="400dp"
+        app:layout_behavior="@string/string_bottom_sheet_behavior"
+        >
+<!--
+        app:layout_behavior="com.snijsure.sample.bottomsheetdemo.LockableBottomSheetBehavior"
+!-->
+        <View
+            android:id="@+id/space"
+            android:background="@android:color/transparent"
+            android:layout_width="fill_parent"
+            android:layout_height="400dp"
+            android:minHeight="200dp"
+            tools:background="@android:color/holo_orange_light"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            >
+
+
+            <TextView
+                android:id="@+id/title_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="@string/title1"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_curate_images"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text1"
+                android:clipToPadding="false"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="visible"/>
+
+            <TextView
+                android:id="@+id/title_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_curate_images"
+                android:text="@string/title2"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_curate_images_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_text2"
+                android:clipToPadding="false"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:visibility="visible"/>
+        </RelativeLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
